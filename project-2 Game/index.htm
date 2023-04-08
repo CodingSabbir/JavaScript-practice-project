@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/Sport_balls.svg.png" type="image/x-icon">   
+    <title>Guessing Game</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="card-title">
+            <h1>Guessing Game</h1>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-field">
+                <label for="GuessingNumber">Guess a number between 1-5:</label>
+                <input type="number" id="GuessingNumber" min="1" max="5" required>
+            </div>
+            <div class="buttons">
+                <button id="chek" type="submit" class="btn">chek result</button>
+            </div>
+          </form>
+            <p class="resultext"></p> 
+            <p class="remaining"></p>
+
+        </div>
+    </div>
+</div>
+
+<script src="./main.js"></script>     
+</body>
+</html>

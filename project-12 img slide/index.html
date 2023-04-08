@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <img id="myImg" src="./img/360_F_286470965_viaHM6ZNjrcvLENe14yWQFi1jEm2jKeV.jpg" alt="" width="200" height="200">
+
+      <script>
+        var img=['./img/360_F_286470965_viaHM6ZNjrcvLENe14yWQFi1jEm2jKeV.jpg', './img/images.jpg','./img/rm328-366-tong-08_1.jpg'];
+        var  myImg=document.getElementById("myImg");
+        var  count=0;
+        function imgChange(){
+            count++
+            if(count>=img.length){
+                count=0;
+                myImg.src=img[count];
+               
+            }else{
+                myImg.src=img[count];
+            }
+            setTimeout("imgChange()",1000) 
+        }
+        window.onload=imgChange();
+      </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- copy section start -->
+     <input type="text" id="copyText" value="I Love My Bangladesh">
+     <button id="copyBtn">Copy Button</button>
+     <!-- copy section end -->
+    <br><br>
+
+     <!-- cut section start -->
+     <input type="text" id="CutText" value="please Cut Me">
+     <button id="cutBtn">Cut Button</button>
+     <!-- cut section end -->
+        <br><br>
+      <!-- paste section start -->
+      <!-- <input type="text" id="paste">
+      <button id="pasteBtn">Paste Button</button> -->
+      <!-- paste section end -->
+
+     <script>
+    var copyText=document.getElementById("copyText");
+    var copybtn=document.getElementById("copyBtn");
+    var CutText=document.getElementById("CutText");
+    var cutBtn=document.getElementById("cutBtn");
+    // var paste=document.getElementById("paste");
+    // var pasteBtn=document.getElementById("pasteBtn");
+
+    copybtn.addEventListener("click",function(){
+        navigator.clipboard.writeText(copyText.value);
+        alert("Copy Success");
+    });
+
+    cutBtn.addEventListener("click",function(){
+        navigator.clipboard.writeText(CutText.value);
+        CutText.value=" "
+    });
+
+    // pasteBtn.addEventListener("click",function(){
+    //     paste.value=" ";
+    //     navigator.clipboard.readText();
+        
+    // });
+     </script>
+</body>
+</html>

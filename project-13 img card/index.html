@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <img id="myImg" src="./img/bg-img-02.jpg" width="500" height="400" alt="">
+    </div>
+    <div>
+        <img onclick="changeImg1()" src="./img/images (2).jpg" width="120" height="120" alt="">
+        <img onclick="changeImg2()" src="./img/images (3).jpg" width="120" height="120" alt="">
+        <img onclick="changeImg3()" src="./img/sunset-1373171__480.jpg" width="120" height="120" alt="">
+        <img onclick="changeImg4()" src="./img/vhoa0.jpg" width="120" height="120" alt="">
+    </div>
+
+    <script>
+  var myImg= document.getElementById("myImg");
+
+function changeImg1(){
+    myImg.src="./img/images (2).jpg" 
+}
+function changeImg2(){
+    myImg.src="./img/images (3).jpg" 
+}
+function changeImg3(){
+    myImg.src="./img/sunset-1373171__480.jpg" 
+}
+function changeImg4(){
+    myImg.src="./img/vhoa0.jpg" 
+}
+    </script>
+</body>
+</html>

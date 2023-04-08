@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title{
+        text-align: center;
+    }
+    img{
+        margin-right:15px;
+    }
+    .btn{
+        margin-top: 20px;
+        text-align: center;
+    }
+    #onBtn{
+        background-color: red;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    #offBtn{
+        background-color: rgb(234, 0, 255);
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+</style>
+<body>
+
+  <div class="title">
+    <h1>Light Off</h1>
+  </div>
+<img id="light1" src="./img/ezgif.com-webp-to-jpg.jpg" width="200" height="150" alt="">
+<img id="light2" src="./img/ezgif.com-webp-to-jpg.jpg" width="200" height="150" alt="">
+<img id="light3" src="./img/ezgif.com-webp-to-jpg.jpg" width="200" height="150" alt="">
+<img id="light4" src="./img/ezgif.com-webp-to-jpg.jpg" width="200" height="150" alt="">
+<img id="light5" src="./img/ezgif.com-webp-to-jpg.jpg" width="200" height="150" alt="">
+
+<br><br>
+
+
+<div class="btn">
+<button id="onBtn" onclick="lightBtn(1)">On</button>
+<button id="offBtn"onclick="lightBtn(0)">Off</button>
+</div>
+
+<script>
+  
+// function lightBtn(match){
+//     var pic;
+// for(i=1; i<=5; i++){
+//     if(match==0){
+//         pic="./img/ezgif.com-webp-to-jpg.jpg";
+//     }
+//     else{
+//       pic="./img/istockphoto-925436266-612x612.jpg"  
+//     }
+//      var light=document.getElementById('light'+(i));
+//      light.src=pic;
+// }
+// }
+
+function lightBtn(match){
+    var pic;
+for(i=1; i<=5; i++){
+    if(match==0){
+        pic="./img/ezgif.com-webp-to-jpg.jpg"
+    }
+    else{
+        pic="./img/istockphoto-925436266-612x612.jpg"
+    }
+ var light=document.getElementById("light"+(i));
+ light.src=pic;
+}
+}
+
+</script>
+
+</body>
+</html>

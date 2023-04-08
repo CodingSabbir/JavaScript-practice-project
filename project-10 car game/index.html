@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="startBtn">Start</button>
+<button id="stopBtn">Stop</button>
+<br>
+<img id="imgCar" src="./img/images__1_-removebg-preview.png" width="200" height="200" alt="">
+
+
+<script>
+var startBtn=document.getElementById("startBtn");
+var stopBtn=document.getElementById("stopBtn");
+var imgCar=  document.getElementById("imgCar");
+var m=0;
+var carRun;
+
+
+// startBtn.addEventListener("click",function(){
+//     carRun=setInterval(run,100);
+//  function run(){
+//     if(m==1000){
+//         clearInterval(carRun);
+//         m=0;
+//     }
+//     else{
+//         m+=10;
+//         imgCar.style.marginLeft=m+'px' 
+//     }
+//  }
+// });
+
+// stopBtn.addEventListener("click",function(){
+//     clearInterval(carRun);
+// });
+
+
+
+
+startBtn.addEventListener("click",function(){
+    carRun= setInterval(run,100);
+    function run(){
+        if(m==1000){
+            clearInterval(carRun);
+            m=0;
+        }
+        else{
+            m+=10;
+            imgCar.style.marginLeft=m+'px' 
+        }
+    }
+});
+stopBtn.addEventListener("click",function(){
+    clearInterval(carRun);
+})
+</script>
+</body>
+</html>
